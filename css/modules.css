@@ -1,0 +1,30 @@
+header{
+    text-align: center;
+    color: saddlebrown;
+    padding: 15px;
+}
+main{
+    margin: 0 auto;
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5%;
+    text-align: center;
+}
+
+    h1 {
+        font-size: 50px;
+        margin: 5px;
+        font-weight: 700; 
+    } 
+    img{
+        width: 100%;
+    }
+    div{
+        float: left;
+        width: 33%;
+        overflow: hidden;
+        margin: 3%;
+        color:floralwhite;
+
+    }   

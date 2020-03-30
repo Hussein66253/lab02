@@ -1,0 +1,19 @@
+header{
+    text-align: center;
+    color: saddlebrown;
+    padding: 15px;
+}
+main{
+    margin: 0 auto;
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5%;
+    text-align: center;
+}
+footer{
+    background-color: gray;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    }
