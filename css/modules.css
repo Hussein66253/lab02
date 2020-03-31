@@ -5,7 +5,7 @@ header{
 }
 main{
     margin: 0 auto;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
     padding: 5%;
@@ -15,16 +15,41 @@ main{
     h1 {
         font-size: 50px;
         margin: 5px;
-        font-weight: 700; 
+        font-weight: 700px; 
     } 
     img{
+        
         width: 100%;
     }
     div{
-        float: left;
-        width: 33%;
+       
+        /* float: left; */
+        width: 20%;
         overflow: hidden;
         margin: 3%;
         color:floralwhite;
 
     }   
+    .all-template{
+         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(31, 189, 189);
+    }
+    li {
+        list-style: none;
+        display: inline-block;
+        margin: 20px ;
+
+    }
+#title ,#num{
+    font-size: 20px;
+        color: rgb(31, 189, 189);
+        margin: 20px ;
+
+}

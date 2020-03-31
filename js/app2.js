@@ -9,7 +9,7 @@ function Images(image_url, title, description, keyword, horns) {
 }
 Images.all=[]
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$.get('../data/page-1.json')
+$.get('../data/page-2.json')
     .then(data => {
         data.forEach((value) => {
             let img = new Images(value.image_url, value.title, value.description, value.keyword, value.horns)
@@ -21,25 +21,25 @@ $.get('../data/page-1.json')
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Images.prototype.render = function () {
-//     let cont = $('<div></div>');
-//    $('.all-template').append(cont);
-//    let imgTitle = $('<h2></h2>').text(this.title);
-//    cont.append(imgTitle);
-//    let img = $('<img></img>').attr('src',this.image_url);
-//    cont.append(img);
-//    let imgDescr = $('<p></p>').text(this.description);
-//    cont.append(imgDescr);
-     $('.first').remove();
-
-      let template = $('#sec-template').html();
-      let html = Mustache.render(template,this);
-      console.log(this);
-      
-      console.log(html);
-      
-      $('.all-template').append(html);
-      
-}
+    //     let cont = $('<div></div>');
+    //    $('.all-template').append(cont);
+    //    let imgTitle = $('<h2></h2>').text(this.title);
+    //    cont.append(imgTitle);
+    //    let img = $('<img></img>').attr('src',this.image_url);
+    //    cont.append(img);
+    //    let imgDescr = $('<p></p>').text(this.description);
+    //    cont.append(imgDescr);
+         $('.first').remove();
+    
+          let template = $('#sec-template').html();
+          let html = Mustache.render(template,this);
+          console.log(this);
+          
+          console.log(html);
+          
+          $('.all-template').append(html);
+          
+    }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Images.prototype.render2 = function () {
@@ -80,34 +80,5 @@ function render3 (){
        cont2.append(imgDescr);
     })
 };
-////////////////////// NO.1 got stuck and needed another way ): ///////////////////////////////////////////
-// Image.prototype.render = function (){
-// let imgClone = $('.all-template').clone();
-// imgClone.removeClass('all-template');
-// imgClone.find('.imgTitle').text(this.title);
-// console.log(this.title);
-
-// imgClone.find("img").attr("src" , this.image_url);
-
-// console.log(this.image_url);
-
-// imgClone.find('.imgDesc').text(this.description);
-// console.log(this.description);
-
-// imgClone.find('.photo').text(this.keyword);
-// $('.photo').append($('<option>').val(this.keyword).text(this.keyword))
-
-// $('main').append(imgClone);
-
-// }
-
-// // function populate(selector) {
-// //     $(selector)
-// //       .append('<option value="foo">foo</option>')
-// //       .append('<option value="bar">bar</option>')
-// //   }
-  
-// //   populate('#myform .myselect');
-// Image.prototype.render2 = function (){
-// }
-// render2 ();
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
