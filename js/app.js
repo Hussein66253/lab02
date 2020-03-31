@@ -9,7 +9,7 @@ function Images(image_url, title, description, keyword, horns) {
 }
 Images.all=[]
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$.get('./page-1.json')
+$.get('../data/page-1.json')
     .then(data => {
         data.forEach((value) => {
             let img = new Images(value.image_url, value.title, value.description, value.keyword, value.horns)
